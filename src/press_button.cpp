@@ -120,7 +120,6 @@ geometry_msgs::PoseStamped pclToPoseStamped(sensor_msgs::PointCloud2 pc2){
 	//adjust z and y positions
 	stampedPose.pose.position.z += 0.1;
 	stampedPose.pose.position.y += 0.07;
-	//stampedPose.pose.position.x =+ 0.06;
 	return stampedPose;
 }
 
