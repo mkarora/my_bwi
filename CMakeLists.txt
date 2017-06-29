@@ -35,6 +35,10 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
+add_executable(demo_push_object src/demo_push_object.cpp)
+target_link_libraries(demo_push_object ${catkin_LIBRARIES} )
+add_dependencies(demo_push_object jaco_msgs_gencpp agile_grasp_gencpp)
+
 add_executable(pour_demo src/pour_demo.cpp)
 target_link_libraries(pour_demo ${catkin_LIBRARIES} )
 add_dependencies(pour_demo jaco_msgs_gencpp pour_gencpp)
